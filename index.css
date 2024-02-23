@@ -1,0 +1,137 @@
+*{
+    font-family: Montserrat;
+}
+body {
+    background-color: rgb(236, 213, 240);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:white;
+background-color:#8A2BE2;
+text-shadow: rgb(122, 122, 122) 4px 3px 0px;
+}
+.openBtn {
+    border: 1px solid black;
+    border-radius: 15%;
+    font-size: 32px;
+    height: 100px;
+    width: 170px;
+    position: fixed;
+    right: 10px;
+    background-color: #9dbeb7;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.form-container .btn {
+    border: 1px solid black;
+    border-radius: 15%;
+    font-size: 24px;
+    height: 50px;
+    width: 100px;
+    position: fixed;
+    right: 180px;
+    background-color: green;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.form-container .Cancel {
+    border: 1px solid black;
+    border-radius: 15%;
+    font-size: 24px;
+    height: 50px;
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%; 
+    right: 50%; 
+    transform: translate(50%, -50%); 
+    width: 300px;
+    height: 500px; 
+    background: #6383a4;
+    background: -moz-radial-gradient(center, #6383a4 0%, #4ccbb1 52%, #147517 100%);
+    background: -webkit-radial-gradient(center, #6383a4 0%, #4ccbb1 52%, #147517 100%);
+    background: radial-gradient(ellipse at center, #6383a4 0%, #4ccbb1 52%, #147517 100%);
+    -webkit-box-shadow: -1px -2px 21px 7px rgba(53, 110, 139, 0.97);
+    box-shadow: -1px -2px 21px 7px rgba(53, 110, 139, 0.97);
+    font-weight: 700;
+    text-align: left;
+    z-index: 9;
+    border: 1px solid black;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+}
+
+
+.form-popup label,
+.form-popup input,
+.form-popup select {
+    display: block;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px; /* Added spacing between form elements */
+}
+
+.form-popup input,
+.form-popup select {
+    border-bottom: 2px solid #000000;
+}
+
+.tasklist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 10px; /* Add gap between grid items */
+    padding: 10px; /* Add padding for better appearance */
+}
+.doneTask {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 10px; /* Add gap between grid items */
+    padding: 10px; /* Add padding for better appearance */
+}
+
+.task-item {
+    background-color:pink;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    padding: 10px; 
+    font-size: 18px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
+.task-item button{
+    background-color: #9FD2EB;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.doneTask .task-item {
+    background-color:#D5ECF0;
+   
+}
+.doneTask button{
+    background-color: #ECD5F0;
+    font-size: 18px;
+    border-radius: 10px;
+}

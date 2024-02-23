@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1>On Going Task</h1>
+    <div class="tasklist" id="taskList">
+        <!-- Task list will be displayed here -->
+    </div>
+<br>
+<h1>Finish Task</h1>
+    <div class="doneTask" id="completedTasks">
+
+        <!-- Completed tasks will be displayed here -->
+    </div>
+
+    <button type="button" class="openBtn" id="openBtn" onclick="openForm()">New Task</button>
+    <!-- Form for adding new task hidden-->
+    <div class="form-popup" id="myForm">
+        <form class="form-container" id="taskForm">
+            <h1>New Task</h1>
+            <label for="addtask"><b>Task</b></label>
+            <input type="text" placeholder="Task Name" name="createTask" id="addtask" required><br>
+            <label for="date"><b>Date</b></label>
+            <input type="date" name="dte" id="date" required><br>
+            <label for="priority">Priority</label>
+            <select name="priority" id="prio" required>
+                <option value="Urgent">Urgent</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button type="submit" class="btn Add">Add</button>
+            <button type="button" class="btn Cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+  
+</body>
+<script src="script.js"></script>
+</html>
