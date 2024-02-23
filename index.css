@@ -85,7 +85,16 @@ text-shadow: rgb(122, 122, 122) 4px 3px 0px;
 
 
 .form-popup label,
-.form-popup input,
+.form-popup input{
+    width: 260px;
+    display: block;
+    font-size: 24px;
+    background-color:transparent;
+    border: none;
+    color: white;
+    margin-bottom: 10px; /* Added spacing between form elements */
+    
+}
 .form-popup select {
     width: 260px;
     display: block;
@@ -96,7 +105,6 @@ text-shadow: rgb(122, 122, 122) 4px 3px 0px;
     margin-bottom: 10px; /* Added spacing between form elements */
     
 }
-
 
 .form-popup input,
 .form-popup select {
